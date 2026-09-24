@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Karel — Design × Kode</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;500;600;700;800;900&family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+
+<div class="blob blob-1"></div>
+<div class="blob blob-2"></div>
+<div id="glow"></div>
+<div id="progress"></div>
+
+<nav>
+  <div class="wrap">
+    <div class="brand"><span class="dot"></span>KAREL</div>
+    <div class="navlinks">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <a href="contact.html" class="btn btn-ghost" style="padding:10px 20px; font-size:0.85rem;">Contact Me</a>
+  </div>
+</nav>
+
+<section class="hero">
+  <canvas id="hero-canvas"></canvas>
+  <div class="wrap">
+    <div>
+      <div class="badge"><span class="dot"></span> Tersedia untuk proyek baru</div>
+      <h1>Build <span class="grad">Digital Experience</span><br>yang dipikirkan, lalu dibangun.</h1>
+      <p>Karel — Product Designer & Software Developer. Menggabungkan riset, desain visual, dan kode untuk menghasilkan produk yang terasa hidup, bukan sekadar mockup.</p>
+      <div class="hero-cta">
+        <a href="projects.html" class="btn btn-primary">Lihat Proyek →</a>
+        <a href="contact.html" class="btn btn-ghost">Diskusi Proyek</a>
+      </div>
+      <div class="hero-meta">
+        <div><div class="n" data-count="5">0</div><div class="l">Tahun Pengalaman</div></div>
+        <div><div class="n" data-count="1200">0</div><div class="l">Proyek Selesai</div></div>
+        <div><div class="n" data-count="18">0</div><div class="l">Company Projects</div></div>
+      </div>
+    </div>
+    <div class="float-card">
+      <div class="fc fc-1" style="padding:18px;">
+        <div class="fc-dot"></div><div class="fc-bar"></div><div class="fc-bar short"></div>
+      </div>
+      <div class="fc fc-2">
+        <div class="fc-dot" style="background:var(--coral);"></div><div class="fc-bar"></div><div class="fc-bar"></div><div class="fc-bar short"></div>
+      </div>
+      <div class="fc fc-3" style="padding:16px;">
+        <div class="fc-dot" style="background:var(--lime);"></div><div class="fc-bar short"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="marquee">
+  <div class="marquee-track">
+    <span><em>UI/UX Design</em> · Front-End Dev · <em>Motion & 3D</em> · Design Systems · <em>React</em> · Prototyping · <em>Riset Pengguna</em> · Branding ·</span>
+    <span><em>UI/UX Design</em> · Front-End Dev · <em>Motion & 3D</em> · Design Systems · <em>React</em> · Prototyping · <em>Riset Pengguna</em> · Branding ·</span>
+  </div>
+</div>
+
+<section class="section" id="about">
+  <div class="wrap">
+    <div class="shead">
+      <span><span class="idx mono">Tentang Singkat</span><h2>Dua disiplin,<br>satu proses kerja.</h2></span>
+      <p>Saya memulai karier sebagai desainer UI/UX, lalu belajar membangun sendiri apa yang saya rancang — kombinasi ini membuat proses development jauh lebih cepat dan minim revisi. <a href="about.html" style="color:var(--indigo); font-weight:600;">Baca selengkapnya →</a></p>
+    </div>
+    <div class="services">
+      <div class="svc"><div class="ic">◆</div><h3>Product Design</h3><p>Riset pengguna, wireframe, dan desain visual yang berakar dari kebutuhan nyata pengguna.</p></div>
+      <div class="svc"><div class="ic">▣</div><h3>Front-End Development</h3><p>Implementasi antarmuka dengan React — cepat, rapi, dan enak diskalakan.</p></div>
+      <div class="svc"><div class="ic">◈</div><h3>Motion & Interaksi 3D</h3><p>Animasi dan elemen 3D yang menambah nuansa, bukan mengganggu pengalaman pengguna.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="cta-panel">
+      <h2>Punya ide produk?<br>Mari wujudkan bersama.</h2>
+      <p>Dari desain sampai kode jadi — saya bantu dari nol atau lanjutkan proyek yang sudah berjalan.</p>
+      <a href="contact.html" class="btn btn-primary">Mulai Diskusi →</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="brand" style="margin-bottom:14px;"><span class="dot"></span>KAREL</div>
+        <p style="color:var(--dim); max-width:36ch; font-size:0.92rem;">Product Designer & Software Developer — merancang dan membangun produk digital dari nol.</p>
+      </div>
+      <div>
+        <h4>Navigasi</h4>
+        <a href="about.html">Tentang</a><a href="projects.html">Proyek</a><a href="contact.html">Kontak</a>
+      </div>
+      <div>
+        <h4>Sosial</h4>
+        <a href="#">LinkedIn</a><a href="#">GitHub</a><a href="#">Dribbble</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 Karel. Seluruh hak dilindungi.</span>
+      <span class="mono">Develop By Karel</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/common.js"></script>
+<script src="assets/hero3d.js"></script>
+</body>
+</html>
